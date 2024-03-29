@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <script type="text/babel">
+            var Vowels = React.createClass({
+                render: function() {
+                    var styling = {
+                        padding: 10,
+                        margin: 10,
+                        backgroundColor: this.props.bgcolor,
+                        color: 'white',
+                        display: 'inline-block',
+                        fontSize: 30,
+                        fontFamily: 'monospace',
+                        textAlign: 'center'
+                    }
+                    return (
+                        <div style = {styling}>
+                            {this.props.children}
+                        </div>
+                    );
+                }
+            });
+            var destination = document.querySelector('#container');
+
+            ReactDOM.render(
+                <div>
+                    <Vowels bgcolor="red">A</Vowels>
+                    <Vowels bgcolor="black">E</Vowels>
+                    <Vowels bgcolor="maroon">I</Vowels>
+                    <Vowels bgcolor="cyan">O</Vowels>
+                    <Vowels bgcolor="magenta">U</Vowels>
+                </div>,
+                destination
+            );
+        </script>
+    </div>
+</body>
+</html>

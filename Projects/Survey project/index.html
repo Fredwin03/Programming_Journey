@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Employee Interests Survey</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rambla&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Rambla&display=swap" rel="stylesheet">
+  <link
+   href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Rambla&family=Roboto+Condensed:wght@300&display=swap"
+   rel="stylesheet">
+  <link
+   href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Rambla&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap"
+   rel="stylesheet">
+ </head>
+ <body>
+   <!--<button id="start" onclick="getElementById('form').style.display='block'"></button>-->
+  <form action="">
+  <div class="form">
+   <h1>Employee Interests Survey</h1>
+   <br>
+   <br>
+   <br>
+   <div id="i">
+    <label class="text" for="name"><b>Enter your name:</b></label>
+    <input class="labels" type="text" maxlength=30 id="name" >
+    <br>
+    <br>
+    <br>
+    <label class="text" for="dep"><b>Enter your department:</b></label>
+    <input class="labels" type="text" maxlength=30 id="dep" >
+    <br>
+    <br>
+    <label class="text" for="area"><b>Tell us a little about yourself:</b></label>
+    <textarea class="labels" cols=30 rows=4 id="area"></textarea>
+    <br>
+    <br>
+    <br>
+    <label class="text"><b>Do you exercise at home?</b></label>
+    <input type="radio" id="yes" name="exercise"  ><label for="yes"><b>Yes</b></label>
+    <input type="radio" id="no" name="exercise" ><label for="no"><b>No</b></label>
+    <br>
+    <br>
+    <br>
+    <label class="text"><b>How do you like to read about your favorite topics?</b></label required>
+    <br>
+    <br>
+    <br>
+    <input type="checkbox" id="books" onclick="document.getElementsByClassName('categories').style.color='green'"><label class="categories" for="books" ><b>Books</b></label>
+
+    <input type="checkbox" id="online"><label class="categories" for="online"><b>Online resources</b></label>
+
+    <input type="checkbox" id="phone"><label class="categories" for="phone"><b>Phone apps</b></label>
+    
+    <input type="checkbox" id="mag"><label class="categories" for="mag"><b>Magazine</b></label>
+    
+    <br>
+    <br>
+    <br>
+    <label class="text"><b>What genre of movies do you like?</b></label>
+    
+    <select id="sel" required>
+     <option selected>Comedy
+     <option>Romance
+     <option>Thriller
+     <option>Horror
+     <option>Biopic
+    
+    </select>
+    <br>
+    <br>
+    
+    <p id="demo"></p>
+    <button id="sub" type="submit" >Submit form</button>
+   </div>
+  </form>
+  <!--
+  <script>
+    if getElementById('form').display == "block"{
+
+    }
+  </script>-->
+ </body>
+</html>
